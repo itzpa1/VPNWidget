@@ -88,27 +88,6 @@ dotnet publish -c Release -r win-x64 --self-contained=true -o publish
 
 ---
 
-## 📜 License (MIT)
-```
-MIT License | Copyright (c) 2025
-
-Permission is hereby granted, free of charge, to use, modify, and distribute.
-Software is provided "AS IS" without warranty of any kind.
-```
-
----
-
-## 🚀 Release Checklist (FOR YOU)
-```
-✔ dotnet publish (win-x64)
-✔ Build Inno Setup installer
-✔ Create GitHub Release
-✔ Upload: VPNWidget-Setup.exe + Screenshots
-✔ Add version tag (v1.0.0)
-```
-
----
-
 ## ⭐ Support
 If you like this project:
 ```
