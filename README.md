@@ -38,7 +38,7 @@ Runs instantly & starts at login.
 
 ---
 
-## 🏗 Build & Publish Commands (All in One)
+## 🏗 Build & Publish Commands
 
 ### 📍 Build for Development (Visual Studio)
 ```
@@ -81,7 +81,7 @@ dotnet publish -c Release -r win-x64 --self-contained=true -o publish
 
 ---
 
-## 📸 Screenshots (Add later)
+## 📸 Screenshots
 | Widget | Dark Mode | Light Mode | Context Menu |
 |--------|------------|-------------|------------|
 | ![](assets/widget.png) | ![](assets/dark.png) | ![](assets/light.png) | ![](assets/context.png) |
