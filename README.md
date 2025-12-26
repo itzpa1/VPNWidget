@@ -82,9 +82,9 @@ dotnet publish -c Release -r win-x64 --self-contained=true -o publish
 ---
 
 ## 📸 Screenshots (Add later)
-| Widget | Dark Mode | Light Mode |
-|--------|------------|-------------|
-| ![](assets/screenshot1.png) | ![](assets/screenshot2.png) | ![](assets/screenshot3.png) |
+| Widget | Dark Mode | Light Mode | Context Menu |
+|--------|------------|-------------|------------|
+| ![](assets/widget.png) | ![](assets/dark.png) | ![](assets/light.png) | ![](assets/context.png) |
 
 ---
 
