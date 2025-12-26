@@ -1,0 +1,59 @@
+﻿<Window x:Class="VpnWidget.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="200" Height="60"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <DropShadowEffect x:Key="DropShadowEffect" Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.5"/>
+    </Window.Resources>
+
+    <Border x:Name="MainBorder" CornerRadius="15" Padding="10"
+            Background="#DD1E1E1E"
+            Effect="{DynamicResource DropShadowEffect}" 
+            MouseDown="DragWindow"
+            MouseEnter="MainBorder_MouseEnter"
+            MouseLeave="MainBorder_MouseLeave">
+        <Border.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="Refresh" Click="Refresh_Click"/>
+                <MenuItem Header="Toggle Theme" Click="ToggleTheme_Click"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="Exit_Click"/>
+            </ContextMenu>
+        </Border.ContextMenu>
+
+        <Grid>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image x:Name="FlagImage" Width="30" Height="20" Margin="0,0,10,0"/>
+                <StackPanel>
+                    <TextBlock x:Name="LocationText" Foreground="White" FontSize="12" FontWeight="Bold"/>
+                    <TextBlock x:Name="IspText" Foreground="White" FontSize="10" FontWeight="SemiBold"/>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Hover-close button -->
+            <Button x:Name="CloseButton" Width="20" Height="20" Content="X"
+                    HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Background="Red" Foreground="White" BorderBrush="Transparent"
+                    FontWeight="Bold" FontSize="12"
+                    Click="CloseButton_Click"
+                    Visibility="Collapsed">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="10"
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,15 @@
+VPN WIDGET - by code.itzpa1
+----------------------------------------
+Author/Developer:  code.itzpa1
+Role:              App/Web Developer
+Instagram:         instagram.com/code.itzpa1
+GitHub:            github.com/itzpa1
+
+A lightweight VPN widget that shows:
+• Current IP & Location
+• Country Flag
+• ISP / Telecom
+• Auto-refresh every 30s
+• Theme toggle & always-on-top
+
+Website / Tutorials: Coming soon...
